@@ -1,6 +1,22 @@
-@import "/css/variables.less";
+@dark: #333;
+@mediumdark: #666;
+@mediumlight: #999;
+@light: #F5F5F5;
+@wht: #FFF;
+@font: 'Open Sans', sans-serif;
+
+.transition (@property: opacity; @duration: 0.2; @ease: ease-in-out) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
 @import "/css/general.less";
 @import "/css/menu.less";
 @import "/css/home.less";
+@import "/css/quotes.less";
 @import "/css/works.less";
 @import "/css/about.less";
+@import "/css/responsive.less";

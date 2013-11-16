@@ -15,10 +15,10 @@
         position: absolute;
         top: 10px; bottom: 10px; left: 10px; right: 10px;
         .transition(opacity; 0.2s);
-        background: @dark;
+        background: #000;
         opacity: 0;
         &:hover{
-          opacity: 0.9;
+          opacity: 0.85;
         }
       }
       .center{
@@ -27,6 +27,11 @@
         height: 100%;
         a{
           text-align: center;
+          color: @light;
+          font-size: 11px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 20px;
         }
       }
     }
@@ -42,10 +47,15 @@
   padding-top: 90px;
   background: @light;
   text-align: center;
+  padding: 90px 0 0 0;
+  .fullscreen{
+    margin: 0;
+    max-width: 100%;
+  }
   #project_desc{
     width: 80%;
     max-width: 700px;
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: left;
     h2{
       text-transform: uppercase;
@@ -66,8 +76,8 @@
     line-height: 2;
   }
   img{
-    margin: 70px 0;
-    max-width: 100%;
+    margin: 100px 0;
+    max-width: 90%;
   }
 }
 footer{

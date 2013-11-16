@@ -23,14 +23,16 @@ header{
       border-left: 1px solid @wht;
       float: left;
       height: 100%;
-      width: 70px;
+      width: 0;
       margin-left: 55px;
       overflow:hidden;
       .transition(all; 0.4s);
+      transition-property: border-color, text-indent, width;
     }
     &:hover #peek{
       border-color: @dark;
       text-indent: 0;
+      width: 70px;
     }
   }
   ul{
