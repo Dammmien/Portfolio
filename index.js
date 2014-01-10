@@ -37,4 +37,4 @@ app.get('/', function(req, res) {
   });
 }).use("/", express.static(__dirname));
 
-app.listen(80);
+app.listen(3000);

@@ -1,0 +1,30 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.4.7",
+    "jade": "~0.35.0",
+    "less": "~1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dammmien/Portfolio"
+  },
+  "keywords": [
+    "Damien",
+    "Duhamel",
+    "Portfolio"
+  ],
+  "author": "Damien Duhamel",
+  "license": "BSD",
+  "gitHead": "6baccce0119e11c79de6838d57423b2ce7d9cd88",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/Dammmien/Portfolio/issues"
+  }
+}
