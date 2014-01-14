@@ -3,7 +3,6 @@
 @mediumlight: #999;
 @light: #F5F5F5;
 @wht: #FFF;
-@font: 'Open Sans', sans-serif;
 
 .transition (@property: opacity; @duration: 0.2; @ease: ease-in-out) {
   -webkit-transition: @arguments;
@@ -13,10 +12,53 @@
   transition: @arguments;
 }
 
-@import "/css/general.less";
-@import "/css/menu.less";
-@import "/css/home.less";
-@import "/css/quotes.less";
-@import "/css/works.less";
-@import "/css/about.less";
-@import "/css/responsive.less";
+html, body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: @dark;
+  background-color: @light;
+}
+
+#content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+  padding: 0 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vertical{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.divider{
+  width: 80%;
+  height:1px;
+  background: #DDD;
+  margin: 0 auto;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+@import "menu.less";
+@import "home.less";
+@import "quotes.less";
+@import "works.less";
+@import "about.less";
+@import "responsive.less";
