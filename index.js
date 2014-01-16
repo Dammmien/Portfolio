@@ -26,7 +26,10 @@ app.get('/', function(req, res) {
   res.end(html);
 }).get('/experiments/:experience', function(req, res) {
   var html = jade.renderFile('views/experiments/' + req.params.experience + '.jade', function (err, html) {
-    if (err)return jade.renderFile('views/404.jade');
+    if (err){
+      console.log(err);
+      return jade.renderFile('views/404.jade');
+    }
     else return html;
   });
   res.setHeader('Content-Type', 'text/html');
