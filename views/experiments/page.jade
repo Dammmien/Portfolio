@@ -4,12 +4,16 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
     meta(name='Description', content='Damien Duhamel - UI / UX Designer & Front-End Developer')
-    link(rel="icon", href="images/favicon.png", type="image/png")
+    title="Damien Duhamel"
+    link(rel="icon", href="/images/favicon.png", type="image/png")
     link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/experiments/#{name}.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,800')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
   body
     include ../header
     block content
+    script(src='/js/experiments/#{name}.js')
     script(type='text/javascript').
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-28339275-1']);

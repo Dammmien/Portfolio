@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
   res.setHeader('Content-Type', 'text/html');
   res.end(html);
 }).get('/:page', function(req, res) {
-  var html = jade.renderFile('views/' + req.params.page + '.jade', function (err, html) {
+  var html = jade.renderFile('views/' + req.params.page + '.jade', {name: req.params.page}, function (err, html) {
     if (err) return jade.renderFile('views/404.jade');
     else return html;
   });
@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
   res.charset = 'utf-8';
   res.end(html);
 }).get('/projects/:project', function(req, res) {
-  var html = jade.renderFile('views/projects/' + req.params.project + '.jade', function (err, html) {
+  var html = jade.renderFile('views/projects/' + req.params.project + '.jade', {name: req.params.project}, function (err, html) {
     if (err)return jade.renderFile('views/404.jade');
     else return html;
   });
@@ -25,11 +25,8 @@ app.get('/', function(req, res) {
   res.charset = 'utf-8';
   res.end(html);
 }).get('/experiments/:experience', function(req, res) {
-  var html = jade.renderFile('views/experiments/' + req.params.experience + '.jade', function (err, html) {
-    if (err){
-      console.log(err);
-      return jade.renderFile('views/404.jade');
-    }
+  var html = jade.renderFile('views/experiments/' + req.params.experience + '.jade', {name: req.params.experience}, function (err, html) {
+    if (err) return jade.renderFile('views/404.jade');
     else return html;
   });
   res.setHeader('Content-Type', 'text/html');

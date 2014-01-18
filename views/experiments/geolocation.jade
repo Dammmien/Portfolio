@@ -1,4 +1,13 @@
 extends page
 append content
   div#content.experiments
-  script(src='/js/geolocation.js')
+    div#weather-container
+      h1 Currently
+      div#weather-result-container
+      h1 Forecast
+      div#weather-forecast-container
+        div#weather-forecast-list-container
+      h1 Search Another city
+      div#weather-search-container
+        input#input-city-search(type="text", placeholder="City name")
+        button#button-city-search SEARCH

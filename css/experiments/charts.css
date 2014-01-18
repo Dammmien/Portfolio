@@ -1,0 +1,72 @@
+#content.experiments{
+  height: 100%;
+  background: url('http://www.strikeapp.com/images/strike/themes/wood/bg.jpg') center center;
+  background-size: cover;
+}
+
+#container{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #FFFFFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:  3px;
+	-webkit-box-shadow: 0px 2px 9px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 2px 9px rgba(0,0,0,0.15);
+}
+
+#container-charts{
+	position: absolute;  
+  width: 96%;
+  height: 92%;
+  top: 4%;
+  right: 2%;
+  background: #FFFFFF;
+}
+
+#container-charts rect{
+  stroke-width: 0.4%;
+  stroke: #FFFFFF;
+  opacity: 0.8;
+}
+
+#container-charts rect:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+#container-details{
+	float: left;
+  width: 0%;
+  height: 100%;
+  background: #F5F5F5;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+}
+
+#container-details.hidden *{
+	display: none;
+}
+
+h2{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  border-bottom: 1px solid #333;
+  padding: 0 0 10px 0; 
+}
+
+#container-details p{
+  width: 80%;
+  margin: 15px auto 0 auto;
+  font-family: monospace;
+  color: #333;
+}
+
+#container-details p strong{
+  text-transform: capitalize;
+}
