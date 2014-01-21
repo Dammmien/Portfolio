@@ -1,7 +1,9 @@
 #content.experiments{
+  margin: 0;
   height: 100%;
-  background: url('http://www.strikeapp.com/images/strike/themes/wood/bg.jpg') center center;
+  background: url('/images/experiments/charts/bg.jpg');
   background-size: cover;
+  font-family: 'Arial';
 }
 
 #container{
@@ -11,14 +13,12 @@
   width: 90%;
   height: 80%;
   background: #FFF;
-	-webkit-border-radius: 3px;
-	-moz-border-radius:  3px;
-	-webkit-box-shadow: 0px 2px 9px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 2px 9px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 #container-charts{
-	position: absolute;  
+  position: absolute;
   width: 96%;
   height: 92%;
   top: 4%;
@@ -28,28 +28,31 @@
 }
 
 #container-charts text{
-  font-size: 9px;
-  letter-spacing: 1px;
+  font-size: 11px;
   fill: #000;
 }
 
+#container-charts line{
+  stroke: rgba(0,0,0,0.2);
+  stroke-width: 1px;
+  stroke-dasharray: 5px 10px;
+}
+
 #container-charts rect{
-  stroke-width: 0.4%;
+  stroke-width: 2px;
   stroke: #FFF;
 }
 
 #container-charts rect:hover{
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #container-details{
-	float: left;
-  width: 0%;
+  float: left;
+  width: 0;
   height: 100%;
   background: #F2F2F2;
-	-webkit-border-radius: 3px 0 0 3px;
-	-moz-border-radius: 3px 0 0 3px;
 }
 
 #container-details.hidden *{
@@ -58,12 +61,12 @@
 
 h2{
   font-size: 14px;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1px;
   width: 80%;
   margin: 20px auto 0 auto;
   border-bottom: 1px solid #333;
-  padding: 0 0 10px 0; 
+  padding: 0 0 10px 0;
 }
 
 #container-details p{
